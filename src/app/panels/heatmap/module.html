@@ -1,0 +1,42 @@
+<div ng-controller='heatmap' ng-init="init()">
+  <style>
+      path.link-path {
+        fill: none;
+        stroke: #666;
+        stroke-width: 1.5px;
+      }
+
+      circle {
+        fill: #8c8c8c;
+        stroke: #8c8c8c;
+        stroke-width: 1.5px;
+      }
+
+      text {
+        fill: #8c8c8c;
+        font: 10px sans-serif;
+        pointer-events: none;
+      }
+
+      rect.bordered {
+        stroke: #E6E6E6;
+        stroke-width:2px;   
+      }
+
+      text.mono {
+        font-size: 9pt;
+        font-family: Consolas, courier;
+        fill: #aaa;
+      }
+
+      text.axis-workweek {
+        fill: #7A7ADD;
+      }
+
+      text.axis-worktime {
+        fill: #7A7ADD;
+      }
+	  
+  </style>
+  <div heatmap params="{{panel}}" ng-style="{height:panel.height||row.height}"></div>
+</div>

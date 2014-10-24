@@ -1,0 +1,21 @@
+<div class="editor-row">
+  <div class="editor-option">
+	<form>
+	  <h6>Day Field<tip>Field containing the day of transaction</tip></h6>
+	  <input bs-typeahead="fields.list" type="text" class="input-small" ng-model="panel.day_field" ng-change="set_refresh(true)">
+	</form>
+  </div>
+  <div class="editor-option">
+	<form>
+	  <h6>Hour Field <tip>Field containing the hour (1-24) of the transaction</tip></h6>
+	  <input bs-typeahead="fields.list" type="text" class="input-small" ng-model="panel.hour_field" ng-change="set_refresh(true)">
+	</form>
+  </div>
+    <div class="editor-option">
+	<form>
+	  <h6>Value Field <tip>Field containing the aggregate value of above day and hour transaction</tip></h6>
+	  <input bs-typeahead="fields.list" type="text" class="input-small" ng-model="panel.value_field" ng-change="set_refresh(true)">
+	</form>
+  </div>
+  
+</div>
